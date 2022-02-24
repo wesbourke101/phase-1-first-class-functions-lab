@@ -6,4 +6,12 @@ const returnFirstTwoDrivers = function(array) {
     return newArray;
 }
 
-returnFirstTwoDrivers(drivers);
+const returnLastTwoDrivers = function(array) {
+    const newArray = array.slice(-2)
+    return newArray;
+}
+
+const selectingDrivers = function(returnFirstTwoDrivers, returnLastTwoDrivers) {
+    const newArray = [returnFirstTwoDrivers(), returnLastTwoDrivers()]
+    return newArray;
+}
