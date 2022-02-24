@@ -2,17 +2,27 @@
 //const drivers = ['Antonia', 'Nuru', 'Amari', 'Mo'];
 
 const returnFirstTwoDrivers = function(array) {
-    const newArray = array.slice(0,2)
+    const newArray = array.slice(0,2);
     return newArray;
 }
 
 const returnLastTwoDrivers = function(array) {
-    const newArray = array.slice(-2)
+    const newArray = array.slice(-2);
     return newArray;
 }
 
-const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
-function createFareMultiplier(arg, int) {
-    return function multi() {arg * int}
+function createFareMultiplier(arg) {
+    return function multi(arg2) {return arg * arg2};
+}
+
+function fareDoubler(arg) {
+    const hello = createFareMultiplier(arg)(2);
+    return hello;
+}
+
+function fareTripler(arg) {
+    const hello = createFareMultiplier(arg)(3);
+    return hello;
 }
