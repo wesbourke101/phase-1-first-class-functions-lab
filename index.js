@@ -12,4 +12,4 @@ const returnLastTwoDrivers = function(array) {
 }
 
 
-    const newArray = [returnFirstTwoDrivers, returnLastTwoDrivers]
+    const returnFirstTwoDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
