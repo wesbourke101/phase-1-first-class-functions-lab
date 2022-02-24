@@ -2,7 +2,8 @@
 //const drivers = ['Antonia', 'Nuru', 'Amari', 'Mo'];
 
 const returnFirstTwoDrivers = function(array) {
-
+    const newArray = array.slice(0,2)
+    return newArray;
 }
 
 returnFirstTwoDrivers(drivers);
